@@ -1,0 +1,54 @@
+html{
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+body{
+	// font-family: 'Свой';
+	font-weight: 400;
+	font-size: 20px;
+	color: $black;
+	position: relative;
+}
+a{
+	display: inline-block;
+	text-decoration: none;
+	// color: #000;
+}
+p{
+	margin: 0;
+}
+ul,
+li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+button{
+	display: block;
+	background: none;
+	border: none;
+	padding: 0;
+	cursor: pointer;
+}
+img,
+svg{
+	&.dp-block{
+		display: block;
+	}
+}
+
+.container{
+	max-width: 1720px;
+	width: 100%;
+	padding: 0 25px;
+	margin: 0 auto;
+}
+.container-fluid{
+    max-width: 1920px;
+	width: 100%;
+	margin: 0 auto;
+}
