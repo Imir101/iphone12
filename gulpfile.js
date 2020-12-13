@@ -26,6 +26,7 @@ gulp.task('style', function(){
     return gulp.src([
         'node_modules/normalize.css/normalize.css',
         'node_modules/owl.carousel/dist/assets/owl.carousel.css',
+        'node_modules/owl.carousel/dist/assets/owl.theme.default.css',
     ])
     .pipe(concat('libs.min.css'))
     .pipe(cssmin())
