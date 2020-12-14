@@ -15,7 +15,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        height: 110px;
+        height: 109px;
     }
     &__menu{
         display: flex;
@@ -24,6 +24,7 @@
         max-width: 555px;
         width: 100%;
         margin-left: auto;
+        margin-right: auto;
         &-link{
             color:#8DA1B6;
             font-size: 18px;
@@ -53,22 +54,16 @@
         font-size: 40px;
         font-weight: 700;
         line-height: 50px;
-        color: $black;
     }
     &__phone{
         a{
-            color: $black;
-            font-size: 20px;
+            line-height: 27px;
             font-weight: 700;
-            line-height: 25px;
             margin-left: 101px;
         }
     }
     &__logo{
         margin-left: 43px;
-    }
-    &__bags{
-        margin-left: 377px;
     }
 }
 
@@ -76,13 +71,13 @@
 // END HEADER
 .burger-menu{
     width: 26px;
-    height: 25px;
+    height: 20px;
     position: relative;
     span{
         display: block;
         position: absolute;
         width: 100%;
-        height: 5px;
+        height: 4px;
         border-radius: 2px;
         background-color: $black;
         left: 0;
@@ -125,13 +120,11 @@
     &__wrapper{
         padding-bottom: 322px;
         padding-top: 68px;
+        margin-right: 40px;
     }
     &__text{
         max-width: 700px;
-        font-size: 20px;
-        line-height: 40px;
         margin-bottom: 100px;
-        margin-right: 40px;
         color: #8DA1B6;
     }
     .order{
@@ -164,7 +157,6 @@
     }
     &-num{
         color:  #EEEEEE;
-        font-size: 20px;
         line-height: 24px;
         &.active{
             color: #2D3D51 !important;
@@ -186,13 +178,9 @@
             position: relative;
             min-height: 800px;
         }
-        &__text{
-            padding: 50px 0;
-            padding-left: 75px;
-            max-width: 600px;
-            font-size: 20px;
-            line-height: 40px;
-            color: $black; 
+        &__wrapper{
+            padding: 50px 0 50px 75px;
+            max-width: 675px;
         }
         .order{
             left: 0;
@@ -285,6 +273,7 @@
     }
 }
 // END SECTION4
+
 // START SECTION5
 .fifth{
     background-color: $white;
@@ -292,24 +281,28 @@
         position: relative;
         display: flex;
     }
+    &__icon{
+        max-width: max-content;
+        margin: 0 auto;
+    }
     &__item{
         text-align: center;
         max-width: 306px;
         width: 100%;
-        padding-bottom: 250px;
-        .title{
-            padding: 50px 0px;
+        &-title{
+            margin: 50px 0px;
         }
-        & + .fifth__item{
-            margin-left: 250px;
+        &-text{
+            color: #8DA1B6;
+            line-height: 30px;
         }
-    }
-    &__text{
-        color: #8DA1B6;
     }
     &__wrapper{
+        max-width: 100%;
+        width: 100%;
         display: flex;
-        margin-top: 250px;
+        justify-content: space-between;
+        padding: 250px 176px;
     }
     .order{
         &-line{
@@ -318,6 +311,7 @@
     }
 }
 // END SECTION5
+
 // START SLIDER
 .slider{
     background-color: #FBF0E0;
@@ -343,7 +337,6 @@
         }
         &-author{
             font-weight: 700;
-            font-size: 20px;
             line-height: 30px;
         }
         &-space{
@@ -383,11 +376,8 @@
     height: 100px;
     top: -50px;
     left: 30px;
-    img{
-        max-width: 100%;
-        width: 100%;
-        border-radius: 50%;
-    }
+    border-radius: 50%;
+    overflow: hidden;
 }
 
 // END SLIDER
@@ -397,37 +387,30 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    padding: 100px 0 0;
+    padding-top: 100px;
     &__inner{
-        padding: 100px;
         max-width: 980px;
         width: 100%;
         background-color: $white;
         display: flex;
+        padding: 100px;
+        padding-right: 242px;
+        position: relative;
     }
     &__text{
         max-width: 638px;
         width: 100%;
         color: #8DA1B6;
-        font-size: 20px;
-        line-height: 40px;
-        margin-bottom: 60px;
+        margin-bottom: 50px;
 
     }
-    &__item{
+    &__items{
         display: flex;
-        color: $black;
-        font-size: 20px;
-        line-height: 40px;
-        margin-bottom: 60px;
-        &-adress{
-            max-width: 163px;
-            width: 100%;
-            margin-right: 60px;
-        }
-        &-info{
-            max-width: 268px;
-            width: 100%;
+        margin-bottom: 50px;
+    }
+    &__item{
+        & + &{
+            margin-left: 60px;
         }
     }
     &__phone{
@@ -437,6 +420,9 @@
         
     }
     &__social{
+        position: absolute;
+        top: 100px;
+        right: 100px;
         ul{
             max-height: 520px;
             height: 100%;
@@ -446,7 +432,6 @@
         }
         &-link{
             font-weight: 700;
-            font-size: 20px;
             line-height: 30px;
             color: $black;
             transition: all 0.3s;            
@@ -466,24 +451,27 @@
 // START MENU
 .menu{
     position: fixed;
-    top: 111px;
+    top: 110px;
     left: 0;
     background-color: $white;
     max-width: 400px;
     width: 100%;
-    min-height: 100vh;
-    padding: 50px 59px 58px 100px;
-    padding-bottom: 58px;
+    height: calc(100% - 110px);
     transition: all .3s;
     transform: translateX(-100%);
+    overflow-y: auto;
     &.active{
         transform: translateX(0);
         box-shadow: 0px 20px 66px rgba(0, 109, 211, 0.2);
     }
+    &__wrapper{
+        padding: 50px 35px 87px 100px;
+        padding-bottom: 58px;
+    }
     &__links{
         font-weight: 600;
         font-size: 30px;
-        line-height: 45px;
+        line-height: 40px;
         margin-bottom: 50px;
         li{
             & + li{
@@ -496,8 +484,7 @@
     }
     &__info-links{
         color: $black;
-        font-size: 20px;
-        line-height: 30px;
+        line-height: 27px;
         margin-bottom: 50px;
         li{
             & + li{
@@ -531,10 +518,6 @@
 }
 // END MENU
 // START CART
-.modal__inner{
-    max-width: 1720px;
-    width: 100%;
-}
 .cart{
     &__inner{
         display: flex;

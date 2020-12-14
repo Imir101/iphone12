@@ -11,9 +11,10 @@ html {
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: 400;
   font-size: 20px;
+  line-height: 200%;
   color: #2D3D51;
   position: relative;
   overflow-x: hidden;
@@ -86,7 +87,6 @@ svg.dp-block {
   font-weight: 700;
   font-size: 40px;
   line-height: 50px;
-  color: #2D3D51;
 }
 
 .button {
@@ -117,7 +117,8 @@ svg.dp-block {
 .fieldset {
   width: 100%;
   border: 2px solid #F0F4F7;
-  padding: 8px 20px 15px 10px;
+  padding: 0px 20px 7px 10px;
+  margin: 0;
 }
 
 .fieldset input {
@@ -191,7 +192,6 @@ svg.dp-block {
 
 .modal .cart-title {
   font-weight: 700;
-  font-size: 20px;
   line-height: 25px;
   color: #2D3D51;
 }
@@ -216,7 +216,7 @@ svg.dp-block {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 110px;
+  height: 109px;
 }
 
 .header__menu {
@@ -232,6 +232,7 @@ svg.dp-block {
   max-width: 555px;
   width: 100%;
   margin-left: auto;
+  margin-right: auto;
 }
 
 .header__menu-link {
@@ -270,14 +271,11 @@ svg.dp-block {
   font-size: 40px;
   font-weight: 700;
   line-height: 50px;
-  color: #2D3D51;
 }
 
 .header__phone a {
-  color: #2D3D51;
-  font-size: 20px;
+  line-height: 27px;
   font-weight: 700;
-  line-height: 25px;
   margin-left: 101px;
 }
 
@@ -285,13 +283,9 @@ svg.dp-block {
   margin-left: 43px;
 }
 
-.header__bags {
-  margin-left: 377px;
-}
-
 .burger-menu {
   width: 26px;
-  height: 25px;
+  height: 20px;
   position: relative;
 }
 
@@ -299,7 +293,7 @@ svg.dp-block {
   display: block;
   position: absolute;
   width: 100%;
-  height: 5px;
+  height: 4px;
   border-radius: 2px;
   background-color: #2D3D51;
   left: 0;
@@ -359,14 +353,12 @@ svg.dp-block {
 .first__wrapper {
   padding-bottom: 322px;
   padding-top: 68px;
+  margin-right: 40px;
 }
 
 .first__text {
   max-width: 700px;
-  font-size: 20px;
-  line-height: 40px;
   margin-bottom: 100px;
-  margin-right: 40px;
   color: #8DA1B6;
 }
 
@@ -399,7 +391,6 @@ svg.dp-block {
 
 .order-num {
   color: #EEEEEE;
-  font-size: 20px;
   line-height: 24px;
 }
 
@@ -431,13 +422,9 @@ svg.dp-block {
   min-height: 800px;
 }
 
-.second__text {
-  padding: 50px 0;
-  padding-left: 75px;
-  max-width: 600px;
-  font-size: 20px;
-  line-height: 40px;
-  color: #2D3D51;
+.second__wrapper {
+  padding: 50px 0 50px 75px;
+  max-width: 675px;
 }
 
 .second .order {
@@ -573,30 +560,38 @@ svg.dp-block {
   display: flex;
 }
 
+.fifth__icon {
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  margin: 0 auto;
+}
+
 .fifth__item {
   text-align: center;
   max-width: 306px;
   width: 100%;
-  padding-bottom: 250px;
 }
 
-.fifth__item .title {
-  padding: 50px 0px;
+.fifth__item-title {
+  margin: 50px 0px;
 }
 
-.fifth__item + .fifth__item {
-  margin-left: 250px;
-}
-
-.fifth__text {
+.fifth__item-text {
   color: #8DA1B6;
+  line-height: 30px;
 }
 
 .fifth__wrapper {
+  max-width: 100%;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 250px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 250px 176px;
 }
 
 .fifth .order-line {
@@ -627,7 +622,6 @@ svg.dp-block {
 
 .slider__item-author {
   font-weight: 700;
-  font-size: 20px;
   line-height: 30px;
 }
 
@@ -673,12 +667,8 @@ svg.dp-block {
   height: 100px;
   top: -50px;
   left: 30px;
-}
-
-.avatar img {
-  max-width: 100%;
-  width: 100%;
   border-radius: 50%;
+  overflow: hidden;
 }
 
 .footer {
@@ -686,51 +676,47 @@ svg.dp-block {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding: 100px 0 0;
+  padding-top: 100px;
 }
 
 .footer__inner {
-  padding: 100px;
   max-width: 980px;
   width: 100%;
   background-color: #fefefe;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 100px;
+  padding-right: 242px;
+  position: relative;
 }
 
 .footer__text {
   max-width: 638px;
   width: 100%;
   color: #8DA1B6;
-  font-size: 20px;
-  line-height: 40px;
-  margin-bottom: 60px;
+  margin-bottom: 50px;
 }
 
-.footer__item {
+.footer__items {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  color: #2D3D51;
-  font-size: 20px;
-  line-height: 40px;
-  margin-bottom: 60px;
+  margin-bottom: 50px;
 }
 
-.footer__item-adress {
-  max-width: 163px;
-  width: 100%;
-  margin-right: 60px;
-}
-
-.footer__item-info {
-  max-width: 268px;
-  width: 100%;
+.footer__item + .footer__item {
+  margin-left: 60px;
 }
 
 .footer__phone a {
   color: #2D3D51;
+}
+
+.footer__social {
+  position: absolute;
+  top: 100px;
+  right: 100px;
 }
 
 .footer__social ul {
@@ -749,7 +735,6 @@ svg.dp-block {
 
 .footer__social-link {
   font-weight: 700;
-  font-size: 20px;
   line-height: 30px;
   color: #2D3D51;
   -webkit-transition: all 0.3s;
@@ -768,20 +753,19 @@ svg.dp-block {
 
 .menu {
   position: fixed;
-  top: 111px;
+  top: 110px;
   left: 0;
   background-color: #fefefe;
   max-width: 400px;
   width: 100%;
-  min-height: 100vh;
-  padding: 50px 59px 58px 100px;
-  padding-bottom: 58px;
+  height: calc(100% - 110px);
   -webkit-transition: all .3s;
   -o-transition: all .3s;
   transition: all .3s;
   -webkit-transform: translateX(-100%);
       -ms-transform: translateX(-100%);
           transform: translateX(-100%);
+  overflow-y: auto;
 }
 
 .menu.active {
@@ -792,10 +776,15 @@ svg.dp-block {
           box-shadow: 0px 20px 66px rgba(0, 109, 211, 0.2);
 }
 
+.menu__wrapper {
+  padding: 50px 35px 87px 100px;
+  padding-bottom: 58px;
+}
+
 .menu__links {
   font-weight: 600;
   font-size: 30px;
-  line-height: 45px;
+  line-height: 40px;
   margin-bottom: 50px;
 }
 
@@ -809,8 +798,7 @@ svg.dp-block {
 
 .menu__info-links {
   color: #2D3D51;
-  font-size: 20px;
-  line-height: 30px;
+  line-height: 27px;
   margin-bottom: 50px;
 }
 
@@ -842,11 +830,6 @@ svg.dp-block {
 .menu__contacts {
   font-weight: 600;
   line-height: 33px;
-}
-
-.modal__inner {
-  max-width: 1720px;
-  width: 100%;
 }
 
 .cart__inner {
