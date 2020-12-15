@@ -1,10 +1,10 @@
 @media(max-width: 1000px){
-.header{
-    &__menu{
-        display: none;
+    .header{
+        &__menu{
+            display: none;
+        }
+        &__name{
+            display: block;
+        }
     }
-    &__name{
-        display: block;
-    }
-}
 }

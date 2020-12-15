@@ -521,34 +521,185 @@
 .cart{
     &__inner{
         display: flex;
+        max-width: 1720px;
+        width: 100%;
+    }
+    &__wrapper{
+        max-width: 100%;
+        width: 100%;
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
     }
     &__box{
         display: flex;
         justify-content: space-between;
+        font-weight: bold;
         font-size: 40px;
-        font-weight: 700;
-        line-height: 50px;
-        .price{
-            padding-left: 584px;
-            color: #0195FF;
+        line-height: 53px;
+        margin-bottom: 30px;
+    }
+    &__row{
+        & + &{
+            margin-top: 30px;
         }
     }
+    &__price{
+        color: #0195FF;
+    }
     &__title{
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 53px;
         color: $black;
     }
-    .color{
-        ul.color-product{
+    &__subtitle{
+        font-weight: 700;
+        line-height: 25px;
+        margin-bottom: 15px;
+    }
+    &__photo{
+        max-width: 643px;
+        width: 100%;
+        background-color: #F0F4F7;
+        padding: 101px 92px;
+        img{
+            max-width: 100%;
+        }
+    }
+    &__button{
+        margin-top: auto;
+        margin-left: auto;
+    }
+    &__pages{
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+        &-num{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 68px;
+            height: 68px;
             border-radius: 50%;
-            max-width: 38px;
-            width: 100%;
-            height: 38px;
-            li.color-1{
-                background-color: #FFD4B9;
+            border: 3px solid #F0F4F7;
+            font-weight: bold;
+            font-size: 26px;
+            line-height: 35px;
+            color: #8DA1B6;
+            &.active{
+                border-color: #0195FF;
+                background-color: #0195FF;
+                color: #FFFFFF;
+                & + .cart__pages-line{
+                    background: linear-gradient(90deg, #0195FF 0%, #F0F4F7 100%);
+                }
             }
+        }
+        &-line{
+            flex-grow: 1;
+            height: 3px;
+            background-color: #F0F4F7;
         }
     }
 }
 // END CART
+
+// START COLORS
+.colors{
+    &__list{
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -2px;
+        li{
+            margin-left: 2px;
+        }
+    }
+    &__circle{
+        width: 48px;
+        height: 48px;
+        padding: 3px;
+        border: 2px solid transparent;
+        border-radius: 50%;
+        transition: all .3s;
+        span{
+            display: block;
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+        }
+        &.color1{
+            span{
+                background-color: #FFD4B9;
+            }
+        }
+        &.color2{
+            span{
+                background-color: #FBF0E0;
+            }
+        }
+        &.color3{
+            span{
+                background-color: #4372CC;
+            }
+        }
+        &.color4{
+            span{
+                background-color: #CF3535;
+            }
+        }
+        &.color5{
+            span{
+                background-color: #454441;
+            }
+        }
+    }
+}
+// END COLORS
+
+// START STORAGE
+.storage{
+    &__list{
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -10px;
+        li{
+            margin-left: 10px;
+        }
+    }
+    &__item{
+        min-width: 133px;
+        text-align: center;
+        padding: 12px 20px 17px;
+        line-height: 27px;
+        color: #8DA1B6;
+        border: 2px solid #F0F4F7;
+        transition: all .3s;
+    }
+}
+// END STORAGE
+
+// START QUANTITY
+.quantity{
+    &__form{
+        display: flex;
+        input{
+            width: 65px;
+            height: 56px;
+            border: 3px solid #F0F4F7;
+            text-align: center;
+            font-weight: bold;
+            font-size: 21px;
+            line-height: 28px;
+        }
+        button{
+            width: 42px;
+            height: 56px;
+            background: #F0F4F7;
+        }
+    }
+}
+// END QUANTITY
 
 
 @import 'media';

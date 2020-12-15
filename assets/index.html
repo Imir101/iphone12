@@ -769,56 +769,135 @@
             </ul>
         </div>
     </div>
-    <div id="cart" class="cart modal">
-        <div class="block"></div>
+    <div id="cart" class="cart from-left modal">
         <div class="modal__inner">
-            <div class="modal__content">
-                <div class="cart__inner">
-                    <div class="cart__photo">
-                        <img src="images/cart.png" alt="">
+            <div class="modal__content cart__inner">
+                <div class="cart__photo">
+                    <img class="dp-block" src="images/cart.png" alt="">
+                </div>
+                <div class="cart__wrapper">
+                    <div class="cart__box">
+                        <div class="cart__title">
+                            IPHONE 12 PRO
+                        </div>
+                        <div class="cart__price">1350$</div>
                     </div>
-                    <div class="cart__wrapper">
-                        <div class="cart__box">
-                            <div class="cart__title">
-                                IPHONE 12 PRO
-                            </div>
-                            <div class="price">1350$</div>
-                        </div>
-                        <div class="pages">
-                            
-                        </div>
+                    <div class="cart__pages">
+                        <div class="cart__pages-num active">1</div>
+                        <div class="cart__pages-line"></div>
+                        <div class="cart__pages-num">2</div>
+                        <div class="cart__pages-line"></div>
+                        <div class="cart__pages-num">3</div>
+                        <div class="cart__pages-line"></div>
+                        <div class="cart__pages-num">4</div>
+                    </div>
+                    <div class="cart__row">
                         <div class="quantity">
-                            <div class="cart-title">
+                            <div class="cart__subtitle">
                                 Quantity:
                             </div>
-                            <ul class="quantity">
-                                <li>64GB</li>
-                                <li>128GB</li>
-                                <li>256GB</li>
-                                <li>512GB</li>
-                            </ul>
-                        </div>
-                        <div class="storege">
-                            <div class="cart-title">
-                                Storege:
+                            <div class="quantity__form">
+                                <button>
+                                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M4.58398 10.084H17.4173V11.9173H4.58398V10.084Z" fill="#8DA1B6"/>
+                                    </svg>                                    
+                                </button>
+                                <form action="">
+                                    <input type="text" value="1">
+                                </form>
+                                <button>
+                                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M17.4173 10.084H11.9173V4.58398H10.084V10.084H4.58398V11.9173H10.084V17.4173H11.9173V11.9173H17.4173V10.084Z" fill="#0195FF"/>
+                                    </svg>                                    
+                                </button>
                             </div>
                         </div>
-                        <div class="color">
-                            <div class="cart-title">
+                    </div>
+                    <div class="cart__row">
+                        <div class="storage">
+                            <div class="cart__subtitle">
+                                Storage:
+                            </div>
+                            <ul class="storage__list">
+                                <li>
+                                    <label class="fake-checkbox">
+                                        <input type="radio" name="storage">
+                                        <div class="storage__item">64GB</div>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="fake-checkbox">
+                                        <input type="radio" name="storage">
+                                        <div class="storage__item">128GB</div>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="fake-checkbox">
+                                        <input type="radio" name="storage">
+                                        <div class="storage__item">256GB</div>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="fake-checkbox">
+                                        <input type="radio" name="storage">
+                                        <div class="storage__item">512GB</div>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="cart__row">
+                        <div class="colors">
+                            <div class="cart__subtitle">
                                 Color:
                             </div>
-                            <ul class="color-product">
-                                <li class="color-1"></li>
-                                <li class="color-2"></li>
-                                <li class="color-3"></li>
-                                <li class="color-4"></li>
-                                <li class="color-5"></li>
+                            <ul class="colors__list">
+                                <li>
+                                    <label class="fake-checkbox">
+                                        <input type="radio" name="color">
+                                        <div class="colors__circle color1">
+                                            <span></span>
+                                        </div>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="fake-checkbox">
+                                        <input type="radio" name="color">
+                                        <div class="colors__circle color2">
+                                            <span></span>
+                                        </div>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="fake-checkbox">
+                                        <input type="radio" name="color">
+                                        <div class="colors__circle color3">
+                                            <span></span>
+                                        </div>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="fake-checkbox">
+                                        <input type="radio" name="color">
+                                        <div class="colors__circle color4">
+                                            <span></span>
+                                        </div>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="fake-checkbox">
+                                        <input type="radio" name="color">
+                                        <div class="colors__circle color5">
+                                            <span></span>
+                                        </div>
+                                    </label>
+                                </li>
                             </ul>
                         </div>
-                        <button class="cart__button button">
-                            Next                              
-                        </button>
                     </div>
+                    <button class="cart__button button">
+                        Next                              
+                    </button>
                 </div>
             </div>
         </div>

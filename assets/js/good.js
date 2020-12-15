@@ -10,13 +10,21 @@ $(function() {
         let id = $(this).attr('href');
         $(id).addClass('active');
         $('body').addClass('stopped');
-        // $('.block').addClass('active');
-        $(id).find('.modal__inner').addClass('modal-close');
+        $(`${id} .modal__inner`).addClass('active');
     });
     $('.modal-close').on('click', function () {
-        $(this).parents('.modal').removeClass('active');
-    })
-
+        $(this).parents('.modal__inner, .modal').removeClass('active');
+        $('body').removeClass('stopped');
+        // $('.block').removeClass('active');
+    });
+    $('.modal__inner').on('click', function () {
+        $('.modal').removeClass('active');
+        $('body').removeClass('stopped');
+        $(this).removeClass('active');
+    });
+    $('.modal__content').on('click', function(e){
+        e.stopPropagation();
+    });
 
 
 });
